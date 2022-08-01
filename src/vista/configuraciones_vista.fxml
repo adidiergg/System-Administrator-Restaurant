@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.configuraciones_control">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="99.0" prefHeight="620.0" prefWidth="1050.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label text="Información de caja">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="tbox_caja" labelFloat="true" promptText="Numero de caja" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="18.0">
+               <children>
+                  <Label text="Información de la empresa">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="tbox_nombre" labelFloat="true" promptText="Nombre de la empresa                        " />
+                  <JFXTextField fx:id="tbox_rfc" labelFloat="true" promptText="RFC" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <JFXTextField fx:id="tbox_correo" labelFloat="true" promptText="Correo" HBox.hgrow="ALWAYS" />
+                        <JFXTextField fx:id="tbox_telefono" labelFloat="true" promptText="Telefono" HBox.hgrow="ALWAYS" />
+                        <JFXTextField fx:id="tbox_web" labelFloat="true" promptText="Pagina Web" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <JFXTextField fx:id="tbox_direccion" labelFloat="true" promptText="Direccion" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+               <children>
+                  <Label text="Configurar servidor">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="tbox_host" labelFloat="true" promptText="Direccion" />
+                  <JFXTextField fx:id="tbox_port" labelFloat="true" promptText="Puerto" />
+                  <JFXTextField fx:id="tbox_user" labelFloat="true" promptText="Usuario" />
+                  <JFXPasswordField fx:id="tbox_pass" labelFloat="true" promptText="Contraseña" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <Separator prefWidth="200.0" />
+            <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <JFXButton fx:id="bt_guardar" onMouseClicked="#guardarConfiguracion" text="Guardar">
+                     <styleClass>
+                        <String fx:value="boton_principal" />
+                        <String fx:value="boton_menu" />
+                     </styleClass></JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" right="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <stylesheets>
+      <URL value="@../recursos/css/diseño.css" />
+      <URL value="@../recursos/css/font.css" />
+   </stylesheets>
+   <padding>
+      <Insets bottom="20.0" />
+   </padding>
+</AnchorPane>

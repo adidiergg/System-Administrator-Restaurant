@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.comandas_control">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefWidth="200.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="bt_nuevo_cmd" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#nuevoCMD" styleClass="boton_menu" text="Nueva">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/añadir.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="bt_abrir_cmd" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#abrirCMD" styleClass="boton_menu" text="Abrir">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/editar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="bt_cancelar_cmd" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#cancelarCMD" styleClass="boton_menu" text="Cancelar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+         </children>
+         <padding>
+            <Insets left="29.0" top="20.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="CENTER" layoutY="99.0" prefHeight="620.0" prefWidth="1050.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: blue;">
+                     <image>
+                        <Image url="@../recursos/iconos/buscar.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="tbox_buscar" labelFloat="true" promptText="Buscar" unFocusColor="#440b1a" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" right="10.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="tabla_cmd" editable="true" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+             <columns>
+                <TableColumn fx:id="col_cmd" maxWidth="1000.0" prefWidth="-1.0" text="Numero de comanda" />
+                  <TableColumn fx:id="col_fecha" maxWidth="1000.0" prefWidth="-1.0" text="Fecha" />
+                  <TableColumn fx:id="col_hora" maxWidth="1000.0" prefWidth="-1.0" text="Hora" />
+                  <TableColumn fx:id="col_mesa" maxWidth="1000.0" prefWidth="-1.0" text="Mesa" />
+                  <TableColumn fx:id="col_personas" maxWidth="1000.0" prefWidth="-1.0" text="Numero de comensales" />
+                  <TableColumn fx:id="col_cliente" maxWidth="1000.0" prefWidth="-1.0" text="Cliente" />
+                  <TableColumn fx:id="col_camarero" maxWidth="1000.0" prefWidth="-1.0" text="Camarero" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox alignment="CENTER_RIGHT" spacing="10.0">
+               <children>
+                  <JFXButton fx:id="bt_refrescar" nodeOrientation="RIGHT_TO_LEFT" styleClass="boton_menu" text="Actualizar">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" onMouseClicked="#refrescar" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/iconos/refrescar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="bt_exportar" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#exportar" styleClass="boton_menu" text=" Exportar">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/iconos/exportar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <stylesheets>
+      <URL value="@../recursos/css/diseño.css" />
+      <URL value="@../recursos/css/font.css" />
+   </stylesheets>
+</AnchorPane>

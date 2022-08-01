@@ -1,0 +1,19 @@
+.parent{
+    -fx-background-color: #F2F2F2;
+}
+.sidebar{
+    -fx-background-color: #732C3F;
+}
+.logo_menu{ 
+     -fx-background-color: #440B1A;
+     -fx-font-family: 'Weather Sunday - Personal Use';
+     -fx-background-image:url('../imagenes/logo-menu.png');
+     -fx-background-size:100%;
+
+}
+.boton_panel Label{
+   
+}
+.boton_panel:hover{
+    -fx-background-color:#AA5F73;
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.insumos_control">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefWidth="200.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="bt_nuevo_insumo" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#nuevoInsumo" styleClass="boton_menu" text="Nuevo">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/añadir.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="bt_editar_insumo" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#editarInsumo" styleClass="boton_menu" text="Editar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/añadir.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="bt_eliminar_insumo" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#eliminarInsumo" styleClass="boton_menu" text="Eliminar">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/añadir.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+         </children>
+         <padding>
+            <Insets left="29.0" top="20.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="CENTER" layoutY="99.0" prefHeight="620.0" prefWidth="1050.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: blue;">
+                     <image>
+                        <Image url="@../recursos/iconos/buscar.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="tbox_buscar" labelFloat="true" promptText="Buscar" unFocusColor="#440b1a" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" right="10.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="tabla_insumo" editable="true" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+             <columns>
+                <TableColumn fx:id="col_proveedor" maxWidth="1000.0" prefWidth="-1.0" text="Clave" />
+                  <TableColumn fx:id="col_nombre" maxWidth="1000.0" prefWidth="-1.0" text="Nombre" />
+                  <TableColumn fx:id="col_telefono" maxWidth="1000.0" prefWidth="-1.0" text="Telefono" />
+                  <TableColumn fx:id="col_correo" maxWidth="1000.0" prefWidth="-1.0" text="Email" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <JFXButton text=" ">
+                     <graphic>
+                        <ImageView fx:id="bt_refrescar" fitHeight="32.0" fitWidth="32.0" onMouseClicked="#refrescar" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/iconos/refrescar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="bt_exportar" onMouseClicked="#exportar" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/iconos/exportar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <stylesheets>
+      <URL value="@../recursos/css/diseño.css" />
+      <URL value="@../recursos/css/font.css" />
+   </stylesheets>
+</AnchorPane>

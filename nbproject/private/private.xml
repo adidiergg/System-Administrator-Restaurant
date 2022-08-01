@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/empleados_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/configuracion_servidor_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/modelo/Empleado.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/abrir_comanda_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/Main.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/comandas_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/editar_mesa_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/modelo/Pedido.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/panel_gerente_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/editar_cliente_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/com/itextpdf/text/pdf/PdfWriter.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/platillos_bebidas_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/vista/nuevo_mesa_vista.fxml</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/nuevo_mesa_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/modelo/Comanda.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/ventas_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/vista/pagar_vista.fxml</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/editar_platillos_bebidas_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/nuevo_platillos_bebidas_control.java</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/recursos/configuracion/conexion.properties</file>
+            <file>file:/C:/Users/Alanprogrammer/Documents/NetBeansProjects/sgr/src/control/pagar_control.java</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="inicio" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDone="#recuperar_opacidad" onMouseDragged="#mover_ventana" onMousePressed="#posicion" onMouseReleased="#recuperar_opacidad1" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #732C3F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.iniciar_sesion_control">
+   <children>
+      <ImageView fx:id="bt_salir" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#Salir" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@../recursos/iconos/close.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="309.0" layoutY="140.0" onMouseReleased="#recuperar_opacidad1" prefHeight="200.0" prefWidth="100.0" spacing="40.0" style="-fx-background-color: #F2F2F2;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/imagenes/tpv.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="tbox_empleado" focusColor="#440b1a" labelFloat="true" promptText="Empleado" unFocusColor="#aa5f73" />
+            <JFXPasswordField fx:id="tbox_pass" focusColor="#0f0004" labelFloat="true" promptText="Contraseña" unFocusColor="#aa5f73" />
+            <JFXButton fx:id="bt_login" onAction="#iniciar_sesion" prefHeight="41.0" prefWidth="175.0" style="-fx-background-color: #732C3F;" text="Iniciar sesion" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets left="100.0" right="100.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="58.0" layoutY="-21.0" prefHeight="62.0" prefWidth="640.0" spacing="5.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="SISTEMA  DE GESTION DE RESTAURANTE" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fx:id="bt_minimizar" fitHeight="20.0" fitWidth="20.0" layoutX="580.0" layoutY="14.0" onMouseClicked="#Minimizar" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@../recursos/iconos/minus%20%5B%231514%5D.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bt_configuracion" fitHeight="20.0" fitWidth="20.0" layoutX="605.0" layoutY="456.0" onMouseClicked="#configuracion" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <image>
+            <Image url="@../recursos/iconos/settings%20%5B%231491%5D.png" />
+         </image>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <URL value="@../recursos/css/diseño.css" />
+      <URL value="@../recursos/css/font.css" />
+   </stylesheets>
+</AnchorPane>

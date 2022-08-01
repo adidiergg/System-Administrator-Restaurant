@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.editar_platillos_bebidas_control">
+   <children>
+      <VBox alignment="CENTER_LEFT" layoutX="67.0" layoutY="22.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="tbox_nombre" labelFloat="true" promptText="Nombre" />
+            <JFXTextArea fx:id="tbox_descripcion" labelFloat="true" promptText="Descripcion" wrapText="true">
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+            </JFXTextArea>
+            <JFXTextField fx:id="tbox_precioU" labelFloat="true" promptText="Precio Unitario" />
+            <JFXTextField fx:id="tbox_precio" labelFloat="true" promptText="Precio" />
+            <JFXComboBox fx:id="cbox_categoria" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Categoria" />
+            <JFXComboBox fx:id="cbox_estado" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Estado" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <JFXButton fx:id="bt_cancelar" buttonType="RAISED" onMouseClicked="#cancelar" styleClass="boton_secundario" text="Cancelar" />
+                  <JFXButton fx:id="bt_guardar" buttonType="RAISED" onMouseClicked="#editarPlatilloBebida" styleClass="boton_principal" text="Añadir" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../recursos/css/diseño.css" />
+      <URL value="@../recursos/css/font.css" />
+   </stylesheets>
+</AnchorPane>

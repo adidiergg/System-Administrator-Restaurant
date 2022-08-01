@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="parent" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.panel_cajero_control">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="230.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="80.0" styleClass="logo_menu" text="Sistema de gestion de restaurante" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox fx:id="bt_inicio" alignment="CENTER_LEFT" onMouseClicked="#Inicio" prefHeight="50.0" prefWidth="230.0" styleClass="boton_panel">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../recursos/iconos/home.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="39.0" text="Inicio" textFill="#f2f2f2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="bt_comandas" alignment="CENTER_LEFT" onMouseClicked="#Comandas" prefHeight="50.0" prefWidth="230.0" styleClass="boton_panel">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/notebook_and_pen.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="39.0" text="Comandas" textFill="#f2f2f2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="bt_caja" alignment="CENTER_LEFT" onMouseClicked="#Caja" prefHeight="50.0" prefWidth="230.0" styleClass="boton_panel">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/caja.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="39.0" text="Caja" textFill="#f2f2f2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="bt_clientes" alignment="CENTER_LEFT" onMouseClicked="#Clientes" prefHeight="50.0" prefWidth="230.0" styleClass="boton_panel">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/profile_tinto.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="39.0" text="Clientes" textFill="#f2f2f2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="bt_ventas" alignment="CENTER_LEFT" onMouseClicked="#Ventas" prefHeight="50.0" prefWidth="230.0" styleClass="boton_panel">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/caja.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="39.0" text="Ventas" textFill="#f2f2f2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="bt_configuracion" alignment="CENTER_LEFT" onMouseClicked="#Configuracion" prefHeight="50.0" prefWidth="230.0" styleClass="boton_panel">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/settings%20%5B%231491%5D.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="39.0" text="Configuración" textFill="#f2f2f2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="bt_salir" alignment="CENTER_LEFT" onMouseClicked="#Salir" prefHeight="50.0" prefWidth="230.0" styleClass="boton_panel">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/iconos/shut_down.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="39.0" text="Cerrar sesión" textFill="#f2f2f2" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="230.0" layoutY="79.0" prefHeight="720.0" prefWidth="1050.0" styleClass="fondo" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="titulo" styleClass="titulo_principal" text="Inicio">
+               <font>
+                  <Font size="34.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <StackPane fx:id="panel" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../recursos/css/menu.css" />
+      <URL value="@../recursos/css/font.css" />
+      <URL value="@../recursos/css/diseño.css" />
+   </stylesheets>
+</AnchorPane>

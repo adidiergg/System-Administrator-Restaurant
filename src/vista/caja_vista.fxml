@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.caja_control">
+   <children>
+      <VBox alignment="CENTER" layoutY="99.0" prefHeight="620.0" prefWidth="1050.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="100.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Numero de caja" />
+                        <JFXTextField />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Empleado" />
+                        <JFXTextField />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Estado" />
+                        <JFXTextField />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <JFXButton nodeOrientation="RIGHT_TO_LEFT" styleClass="boton_menu" text="Apertura">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/iconos/añadir.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton nodeOrientation="RIGHT_TO_LEFT" styleClass="boton_menu" text="Corte">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/iconos/añadir.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton nodeOrientation="RIGHT_TO_LEFT" styleClass="boton_menu" text="Depositar">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/iconos/añadir.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton nodeOrientation="RIGHT_TO_LEFT" styleClass="boton_menu" text="Retirar">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../recursos/iconos/añadir.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="29.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Label text="Lista de movimientos" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: blue;">
+                     <image>
+                        <Image url="@../recursos/iconos/buscar.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField labelFloat="true" promptText="Buscar" unFocusColor="#440b1a" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" right="10.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="tabla_cliente" editable="true" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+             <columns>
+                <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Codigo de cliente" />
+                <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Nombre" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Apellido Paterno" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Apellido Materno" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="RFC" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Calle" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Num exterior" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Num interior" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Letra" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Codigo postal" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Pais" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Estado" />
+                  <TableColumn maxWidth="1000.0" prefWidth="-1.0" text="Municipio" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox alignment="TOP_RIGHT" prefHeight="50.0">
+               <children>
+                  <JFXButton text="Exportar">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <stylesheets>
+      <URL value="@../recursos/css/diseño.css" />
+      <URL value="@../recursos/css/font.css" />
+   </stylesheets>
+</AnchorPane>

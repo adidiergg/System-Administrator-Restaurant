@@ -1,0 +1,72 @@
+
+/*Botones*/
+/*Menu*/
+.boton_menu{
+    -fx-pref-width:140;
+    -fx-pref-height:40;
+    -fx-background-color:#440B1A;
+    -fx-text-fill:#f2f2f2;
+    -fx-alignment:center;
+    -fx-font-size:18;
+    -fx-cursor:hand;
+   
+}
+/*boton principal*/
+.boton_principal{
+    -fx-background-color:#440B1A;
+    -fx-text-fill:#f2f2f2;
+    -fx-pref-width:120;
+    -fx-pref-height:30;
+}
+.boton_secundario{
+    -fx-background-color:#f2f2f2;
+    -fx-text-fill:#440B1A;
+    -fx-pref-width:120;
+    -fx-pref-height:30;
+}
+
+/*Campos*/
+.jfx-text-field, .jfx-password-field,.jfx-combo-box,.jfx-text-area{
+    -jfx-focus-color:#732C3F;
+    -jfx-unfocus-color:#AA5F73;
+    -fx-font-size:15;
+}
+.jfx-combo-box-popup > .list-view {
+    -fx-pref-width: 100;
+}
+
+
+
+/*Tabla*/
+.table-cell{
+    
+}
+
+.table-view .column-header .label{
+    -fx-text-fill:#f2f2f2;   
+}
+.column-header{
+    -fx-background-color:#440B1A;
+}
+
+/*Titulos*/
+.titulo_principal{
+    /*
+    -fx-font-family:'Simple Script';*/
+    -fx-font-size:50;
+}
+
+.fondo{
+    
+    /*
+    -fx-background-image:url('../imagenes/fondo.png');
+     -fx-background-size:cover;
+    */
+}    
+
+
+.fondo_inicio{
+    -fx-background-image:url('../imagenes/fondo.png');
+    -fx-background-size:cover;
+    
+} 
